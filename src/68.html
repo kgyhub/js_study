@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex. 60</title>
+  </head>
+  <body>
+    <!-- 그림이 그려질 영역 -->
+    <canvas id="real-turtle"></canvas>
+    <script src="https://unpkg.com/real-turtle"></script>
+    <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+    <script>
+      // 프로그램이 시작할 때마다 변경되는 패턴을 그려라. 
+      // Math.random 함수를 사용하여 선의 개수와 각 선의 길이, 그리고 회전 각도를 선택하라.
+
+      const randomLine =  Math.floor(Math.random() * 8) + 3; // 선의 개수
+      const randomLength =  (Math.floor(Math.random() * 10) + 1) * 10; // 길이 px
+      const randomDegree =  Math.floor(Number(360/randomLine));
+      console.log(randomLine);
+      console.log(randomLength);
+      console.log(randomDegree);
+      
+       for (let i = 0; i < randomLine; i++){
+         turtle.forward(randomLength);
+         turtle.right(randomDegree);
+       }
+    </script>
+  </body>
+</html>

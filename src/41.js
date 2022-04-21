@@ -1,4 +1,5 @@
 import { question } from 'readline-sync';
+
 const userName = question('이름을 입력하세요 : ');
 const userNumber = question('숫자를 입력하세요 : ');
 

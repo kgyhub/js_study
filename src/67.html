@@ -12,16 +12,23 @@
     <script src="https://unpkg.com/real-turtle"></script>
     <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
     <script>
-      // 여기서 시작
-      turtle
-        .forward(100)
-        .right(90)
-        .forward(100)
-        .right(90)
-        .forward(100)
-        .right(90)
-        .forward(100);
+      // 다음의 패턴을 만들어라. (8각형 10개).
+      // for (let j=0; j<10; j++) {  
+      //   for (let i=0; i<8; i++) {
+      //       turtle.right(45).forward(50);              
+      //   }
+      //   turtle.right(36);
+      // }
 
+        for(j = 0; j < 10; j++){
+           for(i = 0; i < 8; i++){
+               turtle.forward(50);
+               turtle.right(45);
+              
+           }
+           turtle.right(36);
+           //turtle.hideturtle();
+        }
     </script>
   </body>
 </html>
