@@ -14,5 +14,7 @@ while (tryagain) {
   if (usermag === checkmag) {
     console.log('Thank you');
     tryagain = false;
+  } else {
+    console.log('대문자가 아닙니다.');
   }
 }
