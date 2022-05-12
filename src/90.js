@@ -3,20 +3,36 @@
 // 다섯 개의 숫자가 입력되었다면 "Thank you" 메시지를 출력하고 배열의 항목을 한 줄에 하나씩 출력하라
 import { question } from 'readline-sync';
 
-let userNumber = 0;
-const arrayNumbers = [];
+const array = [];
 
-while (arrayNumbers.length < 5) {
-  userNumber = question('숫자를 입력하세요: ');
-
-  if (Number(userNumber) >= 10 && Number(userNumber) <= 20) {
-    arrayNumbers.push(userNumber);
+while (array.length < 5) {
+  const number_ = question('Enter the 10 ~ 20 Number: ');
+  if (number_ >= 10 && number_ <= 20) {
+    array.push(number_);
   } else {
-    console.log('Out of range');
+    console.log('Outside the range');
   }
 }
 
-console.log('Thank you');
-for (const oneNumber of arrayNumbers) {
-  console.log(oneNumber);
+console.log('thank you');
+for (const element of array) {
+  console.log(element);
 }
+
+// let userNumber = 0;
+// const arrayNumbers = [];
+
+// while (arrayNumbers.length < 5) {
+//   userNumber = question('숫자를 입력하세요: ');
+
+//   if (Number(userNumber) >= 10 && Number(userNumber) <= 20) {
+//     arrayNumbers.push(userNumber);
+//   } else {
+//     console.log('Out of range');
+//   }
+// }
+
+// console.log('Thank you');
+// for (const oneNumber of arrayNumbers) {
+//   console.log(oneNumber);
+// }
